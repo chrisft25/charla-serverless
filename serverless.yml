@@ -1,0 +1,39 @@
+service: CharlaServerless
+
+provider:
+  name: aws
+  stage: development
+  runtime: nodejs12.x
+  timeout: 10
+  memory: 128
+ 
+
+functions:
+  helloWorld:
+    handler: index.helloWorld
+    description: Hello World
+    environment:
+      ENV: development
+    events:
+      - http:
+          path: /{name}
+          method: GET
+          cors: true
+  
+  suma:
+    handler: index.suma
+    description: Suma
+    environment:
+    events:
+      - http:
+          path: /suma
+          method: POST
+          cors: true
+          private: true
+
+  test:
+    handler: index.test
+    description: test
+
+plugins:
+  - serverless-offline

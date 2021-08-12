@@ -1,0 +1,23 @@
+{
+  "name": "charla-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisft25/charla-serverless.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisft25/charla-serverless/issues"
+  },
+  "homepage": "https://github.com/chrisft25/charla-serverless#readme",
+  "dependencies": {
+    "serverless-offline": "^8.0.0"
+  }
+}
